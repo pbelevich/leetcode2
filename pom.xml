@@ -22,6 +22,12 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.7.9</version>
+                <configuration>
+                    <excludes>
+                        <exclude>**/*TreeNode.*</exclude>
+                        <exclude>**/*ListNode.*</exclude>
+                    </excludes>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
